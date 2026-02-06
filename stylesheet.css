@@ -1,0 +1,1040 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  background-color: #0b0e14;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.hero-section {
+  padding: 80px 0;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.power {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.name {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  margin: 15px 0;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 15px rgba(0, 242, 255, 0.4));
+}
+
+#navb {
+  padding: 20px 100px;
+  background-color: #000035;
+}
+.navbar a {
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #000035;
+}
+.dropdown-menu .dropdown-item {
+  color: white;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #000035;
+  color: #8b5cf6;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; 
+    }
+}
+
+
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #000;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/bg1.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hero-section:hover::before {
+  transform: scale(1.1);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.infos {
+  background-color: #8b5cf6;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  max-width: 550px;
+}
+
+.power {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.name {
+  color: #ffffff;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.price {
+  color: #f3f3f3;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.btn-buy {
+  background-color: #ffffff !important;
+  color: #8b5cf6 !important;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: 2px solid white;
+  transition: 0.3s ease;
+}
+
+.btn-buy:hover {
+  transform: scale(1.05);
+  background-color: transparent !important;
+  color: white !important;
+  border: 2px solid white;
+}
+
+.hero-img img {
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/bg1.avif");
+  background-position: center;
+}
+
+.bestseller-header-container {
+  padding: 50px 0 20px 0;
+}
+
+.bs-title {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 800;
+  color: #fff;
+  margin: 0 !important;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.btn-view {
+  background-color: #ffffff !important;
+  color: #8b5cf6 !important;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: 2px solid white;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-view:hover {
+  transform: scale(1.05);
+  background-color: transparent !important;
+  color: white !important;
+  border: 2px solid white;
+}
+
+@media (max-width: 576px) {
+  .bestseller-header-container {
+    padding: 30px 15px 10px 15px;
+  }
+  .btn-view {
+    padding: 6px 15px;
+    font-size: 12px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.swiper-container-wrapper {
+  position: relative;
+  padding: 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #242738;
+  border-radius: 15px;
+  color: #c8c8d7;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background-color: #2d314d;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #6c2cf5 !important;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.swiper-button-next {
+  right: -20px !important;
+}
+
+.swiper-button-prev {
+  left: -20px !important;
+}
+.swiper-button-next:hover {
+  right: -20px !important;
+  transform: scale(1.05);
+  background-color: transparent !important;
+  color: white !important;
+  border: 2px solid white;
+}
+
+.swiper-button-prev:hover {
+  left: -20px !important;
+  transform: scale(1.05);
+  background-color: transparent !important;
+  color: white !important;
+  border: 2px solid white;
+}
+@media (max-width: 768px) {
+  .swiper-container-wrapper {
+    padding: 0 15px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+/* CARD  */
+
+/* .card {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+} */
+/* Purani .mouse class ko hata kar ye lagayen */
+.imgBox img {
+  max-height: 220px; /* Card ke hisab se height control */
+  max-width: 90%;
+  object-fit: contain;
+  transition: 0.5s;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+.card:hover .imgBox img {
+  transform: scale(1.1) translateY(-10px); /* Hover par thoda uthega */
+}
+/* .mouse {
+    max-height: 250px;
+    width: auto;
+    object-fit: contain;
+}
+ */
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #6c2cf5;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card::after {
+  content: "ARCHADE";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #6c2cf5;
+  text-decoration: none;
+  background: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.card .contentBox .buy:hover {
+  transform: scale(1.05);
+  background-color: transparent !important;
+  color: white !important;
+  border: 2px solid white;
+}
+.card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width: auto;
+}
+
+/* Category Section Styling - Refined Hover */
+.category-card {
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+  height: 450px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border like the image */
+}
+#category-selection{
+  height: 850px;
+  background-color: #232223;
+}
+
+/* 1. Lift and Glow on Card Hover */
+.category-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(108, 44, 245, 0.3); /* Purple glow matching your theme */
+  border: 1px solid rgba(139, 92, 246, 0.5);
+}
+
+.category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* 2. Smooth Image Zoom */
+.category-card:hover .category-img {
+  transform: scale(1.1);
+}
+
+/* 3. Text Overlay Animation */
+.category-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 20px;
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.8)
+  ); /* Darker bottom for text clarity */
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.category-name {
+  color: white;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 0;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+  transform: translateY(10px); /* Initial position slightly down */
+}
+
+/* 4. Text slide up and Glow on Hover */
+.category-card:hover .category-name {
+  transform: translateY(-5px); /* Moves text up */
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8),
+    0 0 25px rgba(139, 92, 246, 0.6);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .category-card {
+    height: 350px;
+    border-radius: 30px;
+  }
+}
+
+
+
+
+
+
+/* DEALS SECTION */
+.deals-wrapper {
+  position: relative;
+  height: 500px;
+  margin-top: 100px;
+  margin-bottom: 220px;
+  margin-top: 220px;
+}
+
+.deal-card-bg {
+  position: absolute;
+  width: 400px;
+  height: 550px;
+  border-radius: 30px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.deal-card-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Positions */
+.deal-card-bg.left {
+  left: 0;
+  top: 50px;
+  transform: translateX(-150px);
+}
+
+.deal-card-bg.right {
+  right: 0;
+  top: 50px;
+  transform: translateX(150px);
+}
+
+.deal-card-bg.bottom {
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 150px);
+}
+
+/* Promo Box */
+.promo-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  background-color: #8b5cf6;
+  padding: 40px 50px;
+  border-radius: 30px;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.promo-box h5 {
+  letter-spacing: 2px;
+}
+
+
+.promo-box h1 {
+  font-size: 80px;
+  font-weight: 1000;
+}
+.promo-box h2 {
+  font-size: 50px;
+  font-weight: 6  00;
+  
+}
+
+.btn-shop {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 40px;
+  border-radius: 50px;
+  background: white;
+  color: #8b5cf6;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid white;
+  transition: 0.3s ease;
+}
+.btn-shop:hover{
+  transform: scale(1.05);
+  background-color: transparent !important;
+  color: white !important;
+  border: 2px solid white;
+}
+
+
+
+/* ACTIVE STATE (Animation Trigger) */
+.animate.show {
+  opacity: 1;
+}
+
+.animate.show.left {
+  transform: translateX(0);
+}
+
+.animate.show.right {
+  transform: translateX(0);
+}
+
+.animate.show.bottom {
+  transform: translate(-50%, 0);
+}
+
+.zoom.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+.hero-section2 {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Required to clip the zooming image */
+  text-align: center;
+}
+
+/* Background Layer */
+.hero-section2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/BG2.avif');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  transition: transform 0.1s ease-out; /* Smooths out the scroll movement */
+  will-change: transform;
+}
+
+.save {
+  z-index: 1;
+  padding: 20px;
+}
+
+.save .name {
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.hero-section2::after {
+  /* Use the variable from JS, default to 1 */
+  transform: scale(var(--zoom-level, 1)); 
+}
+
+/* NEWSLETTER & FANNED GAMES OVERLAP (UPDATED) */
+.newsletter-final-section {
+  background-image: url('../images/NEWSCOVER.avif');
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px;
+  padding-bottom: 0; /* Important: image overlap ke liye */
+  position: relative;
+  overflow: visible; /* Important: taaki image upar nikal sake */
+}
+
+.newsletter-content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  margin: 0 auto 120px auto; /* Gap for image */
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.newsletter-title {
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+}
+
+.newsletter-subtitle {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.newsletter-input {
+  background: transparent !important;
+  border: 1px solid #ffffff80 !important;
+  border-radius: 10px;
+  color: white !important;
+  height: 45px;
+}
+
+.newsletter-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-newsletter-submit {
+
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 40px;
+  border-radius: 50px;
+  background: white;
+  color: #8b5cf6;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid white;
+  transition: 0.3s ease;
+}
+
+.btn-newsletter-submit:hover {
+  transform: scale(1.05);
+  background-color: transparent !important;
+  color: white !important;
+  border: 2px solid white;
+}
+
+.fanned-games-footer {
+  background: linear-gradient(to right, #6d28d9, #a855f7);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 60px;
+}
+
+.footer-static-img {
+  max-width: 1000px;
+  width: 90%;
+  height: auto;
+  display: block;
+  margin-top: -120px; /* Yeh image ko upar Newsletter section par kheechega */
+  position: relative;
+  z-index: 10;
+  filter: drop-shadow(0 -10px 20px rgba(0,0,0,0.3));
+}
+/* Image ki shuruati halat */
+.footer-static-img {
+  opacity: 0;
+  transform: translateY(100px); /* 100px niche */
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth animation */
+}
+
+/* Jab 'active' class add ho jaye */
+.footer-static-img.active {
+  opacity: 1;
+  transform: translateY(-20px); /* Apni purani jagah (negative margin ke sath) */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .footer-static-img {
+    max-width: 100%; /* Mobile par poori screen par fit aaye */
+  }
+}
+
+
+
+.main-footer {
+  background-color: #000; /* Pure Black background */
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #8b5cf6; /* Hover purple color */
+  padding-left: 5px;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.footer-hr {
+  border-top: 1px solid #333;
+  margin: 40px 0;
+}
+
+/* Icons Styling */
+.payment-icons i, .social-icons i {
+  font-size: 1.8rem;
+  margin-right: 15px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons i:hover {
+  color: #8b5cf6;
+  transform: translateY(-3px);
+}
+
+.footer-copyright {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.8rem;
+}
+
+             /* allproduct section */
+
+/* Product Page Specific Styles */
+.active-link {
+    color: #8b5cf6 !important; /* Purple color for active page */
+    font-weight: 600;
+}
+
+.breadcrumb-item a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-item.active {
+    color: #fff;
+}
+
+.filter-links li {
+    margin-bottom: 15px;
+}
+
+.filter-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.filter-links a:hover, .filter-links a.active {
+    color: #8b5cf6;
+    padding-left: 5px;
+}
+
+/* Adjusting existing cards for the grid */
+.p-card {
+    height: auto !important; /* Grid mein auto height behtar hai */
+    padding-bottom: 20px;
+}
+
+.badge-sale {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #8b5cf6;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    z-index: 5;
+}
+
+.p-card .buy {
+    top: 0 !important; /* Button ko hamesha dikhane ke liye (Optional) */
+    opacity: 1 !important;
+}
+
+/* "Showing all results" ka text style */
+.results-text {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Sort by Label */
+.sort-label {
+    color: #8b5cf6; /* Purple color */
+    font-weight: 500;
+    font-size: 0.9rem;
+    
+}
+
+
+
+
+
+
+
+
+/* Updated Sort Dropdown Styling */
+.custom-sort-select {
+    background-color: #191919;
+    color: white;
+    border: 1px solid #444;
+    padding: 8px 15px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    padding-right: 35px;
+    
+    /* Yeh properties expansion ko rokengi */
+    display: inline-block;
+    width: auto !important; 
+    min-width: 160px;
+    max-width: 250px; 
+}
+
+/* Mobile par agar full width chahiye to ye use karein */
+@media (max-width: 576px) {
+    .sort-container {
+        width: 100% !important;
+    }
+    .custom-sort-select {
+        width: 100% !important;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+.custom-sort-select:hover {
+    border-color: #8b5cf6; /* Hover par purple border */
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
+}
+
+.custom-sort-select option {
+    background-color: #191919;
+    color: white;
+    padding: 10px;
+}
+
+/* 1. Slider ki bariki aur track */
+.arcade-slider {
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 100%;
+    height: 4px;
+    background: #222;
+    /* Yeh niche wali line lazmi add karein */
+    background-image: linear-gradient(#8b5cf6, #8b5cf6);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    border-radius: 5px;
+    outline: none;
+}
+
+/* 2. Slider ka Handle (Jo error aksar yahan hota hai) */
+.arcade-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Yahan ye likhna lazmi hai warna default handle dikhega */
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    background: #8b5cf6;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid #0b0e14;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.6);
+}
+
+/* 3. Firefox ke liye alag se */
+.arcade-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #8b5cf6;
+    border: none;
+    border-radius: 50%;
+}
+
+
+/* Header Container Spacing */
+.product-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 20px;
+}
+
+/* Responsiveness for Sidebar */
+@media (max-width: 991px) {
+    .name {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Cards ko limits mein rakhne ke liye */
+.product-card-fix {
+    width: 100%;
+    max-width: 300px; /* Is se card zyada phaila hua nahi lagega */
+    height: 380px !important;
+    margin: 0 auto;
+    background: #191919;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Image scaling fix */
+.product-card-fix .imgBox img {
+    max-height: 180px;
+    width: auto;
+    transition: 0.5s;
+}
+
+/* Gaps adjustment */
+main.ps-lg-5 {
+    padding-left: 60px !important; /* Sidebar se fasla barhane ke liye */
+}
+
+.row.g-4 {
+    --bs-gutter-y: 3rem; /* Cards ke darmiyan ooper niche ka gap */
+}
