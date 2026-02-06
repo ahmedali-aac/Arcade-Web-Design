@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="stylesheet.css" />
+
+    <title>Arcade</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark p-0 m-0">
+      <div class="container-fluid" id="navb">
+        <a class="navbar-brand" href="index.html">
+          <i class="fa-solid fa-gamepad"> Arcade</i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav justify-content-end">
+            <li class="nav-item dropdown mx-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="allproducts.html"
+                role="button"
+              >
+                Product
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="bestseller.html"
+                    >Best Seller</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="games.html">Games</a></li>
+                <li>
+                  <a class="dropdown-item" href="console.html">Consoles</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="controller.html"
+                    >Controllers</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="accessories.html"
+                    >Accessories</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="on sale.html"
+                >OnSale</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="contactus.html">ContactUs</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">
+                <i class="fa-regular fa-user"></i> Log In</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12 mb-5 mb-lg-0">
+            <div class="infos">
+              <h5 class="power">Power up your game</h5>
+              <h1 class="name">CYBER KID<br />INFINITE</h1>
+              <p class="price">Now Available On PC & Console</p>
+              <a href="games.html"
+                ><button class="btn btn-buy">Buy Now</button></a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 text-center">
+            <div class="hero-img">
+              <img src="images/Cyber.avif" alt="Cyber Kid" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container bestseller-header-container">
+      <div class="row align-items-center">
+        <div class="col-7 col-md-6">
+          <h2 class="bs-title m-0">BEST SELLERS</h2>
+        </div>
+        <div class="col-5 col-md-6 text-end">
+          <a href="bestseller.html"
+            ><button class="btn btn-view">View All</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="swiper-container-wrapper">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/ps5.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>PS5 Console</h3>
+                <h2 class="price">499.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/dead at last.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>Dead At Last</h3>
+                <h2 class="price">35.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/mouse.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>G502 Hero Mouse</h3>
+                <h2 class="price">49.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/headset.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>Arctis 7+ Wireless</h3>
+                <h2 class="price">169.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/kira.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>Kira and the Fading <br />Islands</h3>
+                <h2 class="price">35.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/keyboard.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>Apex Pro TKL</h3>
+                <h2 class="price">189.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next custom-nav"></div>
+      <div class="swiper-button-prev custom-nav"></div>
+    </div>
+    <div id="category-selection">
+      <div class="container py-5">
+        <div class="row py-5">
+          <h2 class="bs-title mb-4">SHOP BY CATEGORY</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <a href="console.html">
+              <div class="category-card">
+                <img
+                  src="images/cat-console.avif"
+                  alt="Consoles"
+                  class="category-img"
+                />
+                <div class="category-overlay">
+                  <h4 class="category-name">Consoles</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="accessories.html">
+              <div class="category-card">
+                <img
+                  src="images/cat-acce.avif"
+                  alt="Accessories"
+                  class="category-img"
+                />
+                <div class="category-overlay">
+                  <h4 class="category-name">Accessories</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="controller.html">
+              <div class="category-card">
+                <img
+                  src="images/cat-controller.avif"
+                  alt="Controllers"
+                  class="category-img"
+                />
+                <div class="category-overlay">
+                  <h4 class="category-name">Controllers</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="deals-wrapper">
+        <div class="deal-card-bg left animate">
+          <img src="images/D1.avif" alt="Game 1" />
+        </div>
+
+        <div class="deal-card-bg right animate">
+          <img src="images/D2.avif" alt="Game 2" />
+        </div>
+
+        <div class="deal-card-bg bottom animate">
+          <img src="images/D3.avif" alt="Game 3" />
+        </div>
+
+        <div class="promo-box animate zoom">
+          <h5>THIS WEEK'S DEALS</h5>
+          <h1>10%</h1>
+          <h2>off all games</h2>
+          <a href="games.html" class="btn-shop">Shop Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="container bestseller-header-container my-5">
+      <div class="row align-items-center">
+        <div class="col-7 col-md-6">
+          <h2 class="bs-title m-0">UPGRADE YOUR GEAR</h2>
+        </div>
+        <div class="col-5 col-md-6 text-end">
+          <a href="accessories.html"
+            ><button class="btn btn-view">View All</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="swiper-container-wrapper">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/ps5.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>PS5 Console</h3>
+                <h2 class="price">499.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/mouse.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>G502 Hero Mouse</h3>
+                <h2 class="price">49.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/headset.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>Arctis 7+ Wireless</h3>
+                <h2 class="price">169.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/keyboard.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>Apex Pro TKL</h3>
+                <h2 class="price">189.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next custom-nav"></div>
+      <div class="swiper-button-prev custom-nav"></div>
+    </div>
+    <div class="hero-section2">
+      <div class="save">
+        <h1 class="name">SPEND & SAVE</h1>
+        <p class="price">Save 20% when you spend more than $125</p>
+        <a href="on sale.html"><button class="btn btn-buy">Shop Now</button></a>
+      </div>
+    </div>
+    <div class="container bestseller-header-container my-5">
+      <div class="row align-items-center">
+        <div class="col-7 col-md-6">
+          <h2 class="bs-title m-0">TRENDING GAMES</h2>
+        </div>
+        <div class="col-5 col-md-6 text-end">
+          <a href="games.html"
+            ><button class="btn btn-view">View All</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="swiper-container-wrapper">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/dead at last.png" class="mouse" />
+              </div>
+              <div class="contentBox">
+                <h3>Dead At Last</h3>
+                <h2 class="price">35.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/ancient.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>Ancient Souls</h3>
+                <h2 class="price">39.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/exile.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>Ice Dome:Exile</h3>
+                <h2 class="price">35.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/kira.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>Kira and the Fading <br />Islands</h3>
+                <h2 class="price">35.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="imgBox">
+                <img src="images/cyber.png" class="mouse" />
+              </div>
+
+              <div class="contentBox">
+                <h3>Cyber Kid Infinite</h3>
+                <h2 class="price">39.<small>99 </small> €</h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next custom-nav"></div>
+      <div class="swiper-button-prev custom-nav"></div>
+    </div>
+    <section class="newsletter-final-section">
+      <div class="container text-center">
+        <div class="newsletter-content">
+          <h2 class="newsletter-title">NEWSLETTER</h2>
+          <p class="newsletter-subtitle">
+            Sign up to receive updates on new products and special offers
+          </p>
+
+          <form class="newsletter-form">
+            <div class="form-group text-start">
+              <label>Email *</label>
+              <input
+                type="email"
+                class="form-control newsletter-input"
+                required
+              />
+            </div>
+
+            <div class="newsletter-footer">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="subCheck" />
+                <label class="form-check-label" for="subCheck">
+                  Yes, subscribe me to your newsletter.
+                </label>
+              </div>
+              <button type="submit" class="btn-newsletter-submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="fanned-games-footer">
+        <img
+          src="images/Gamesstack.avif"
+          alt="Fanned Games"
+          class="footer-static-img"
+        />
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 text-center text-md-start">
+            <div class="footer-logo">
+              <i class="fa-solid fa-gamepad fa-3x mb-2"></i>
+              <h3>ARCADE</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Products</h5>
+            <ul class="footer-links">
+              <li><a href="games.html">Games</a></li>
+              <li><a href="console.html">Consoles</a></li>
+              <li><a href="controller.html">Controllers</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Store</h5>
+            <p class="footer-text">
+              500 Terry Francine Street<br />
+              San Francisco, CA 94158<br /><br />
+              Mon - Fri: 9am - 9pm<br /><br />
+              info@mysite.com<br />
+              123-456-7890
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Policy</h5>
+            <ul class="footer-links">
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="footer-hr" />
+
+        <div class="row align-items-center py-3">
+          <div class="col-md-6">
+            <h6 class="mb-3">Payment Methods</h6>
+            <div class="payment-icons">
+              <i class="fa-brands fa-cc-visa"></i>
+              <i class="fa-brands fa-cc-mastercard"></i>
+              <i class="fa-brands fa-cc-amex"></i>
+              <i class="fa-brands fa-cc-paypal"></i>
+              <i class="fa-brands fa-cc-discover"></i>
+            </div>
+          </div>
+          <div class="col-md-6 text-md-end mt-4 mt-md-0">
+            <h6 class="mb-3">Join the Community</h6>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>© 2026 by ARCADE. Powered and secured by AAC</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true, // Yeh infinite banata hai
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
+    </script>
+
+    <script>
+      const animatedItems = document.querySelectorAll(".animate");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.3 },
+      );
+
+      animatedItems.forEach((item) => observer.observe(item));
+    </script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const section = document.querySelector(".hero-section2");
+        const scrollPosition = window.pageYOffset;
+        const sectionOffset = section.offsetTop;
+        const windowHeight = window.innerHeight;
+
+        // Start zooming when the section starts entering the viewport
+        if (scrollPosition + windowHeight > sectionOffset) {
+          // Calculate a zoom factor (1 is original size, increases as you scroll)
+          const zoom =
+            1 + (scrollPosition + windowHeight - sectionOffset) / 5000;
+
+          // Select the pseudo-element via a CSS variable or direct style injection
+          // Since we can't target ::after directly in JS easily, we use a CSS variable:
+          section.style.setProperty("--zoom-level", zoom);
+        }
+      });
+    </script>
+    <script>
+      const footerObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Jab section nazar aaye, image par 'active' class laga do
+              entry.target
+                .querySelector(".footer-static-img")
+                .classList.add("active");
+            }
+          });
+        },
+        {
+          threshold: 0.2, // Jab 20% section screen par aa jaye tab trigger ho
+        },
+      );
+
+      // Newsletter section ya fanned-games-footer ko observe karein
+      const targetSection = document.querySelector(".newsletter-final-section");
+      footerObserver.observe(targetSection);
+    </script>
+  </body>
+</html>
+<!-- https://codepen.io/Kunalits/pen/GRXQZWE?anon=true&view=pen -->
+<!-- https://codepen.io/a7rarpress/pen/ExdvjBx -->
+<!-- https://codepen.io/codocraft/pen/xbOKmpK -->
+<!-- https://freefrontend.com/css-product-cards/ -->
