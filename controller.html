@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controllers - Arcade</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="stylesheet.css" />
+    
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark p-0 m-0">
+      <div class="container-fluid" id="navb">
+        <a class="navbar-brand" href="index.html">
+          <i class="fa-solid fa-gamepad"> Arcade</i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav justify-content-end">
+            <li class="nav-item dropdown mx-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="allproducts.html"
+                role="button"
+                >
+                Product
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="bestseller.html">Best Seller</a></li>
+                <li><a class="dropdown-item" href="games.html">Games</a></li>
+                <li><a class="dropdown-item" href="console.html">Consoles</a></li>
+                <li><a class="dropdown-item  active-link" href="controller.html">Controllers</a></li>
+                <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="on sale.html">OnSale</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="contactus.html">ContactUs</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">
+                <i class="fa-regular fa-user"></i> Log In</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Controllers</li>
+            </ol>
+        </nav>
+
+        <div class="row mt-2">
+            <div class="row mt-5 gx-lg-2">
+          <aside class="col-lg-2 d-none d-lg-block border-end-custom">
+        <h5 class="mb-4 text-uppercase fw-bold" style="letter-spacing: 1px;">Browse by</h5>
+        <ul class="list-unstyled filter-links">
+            <li><a href="allproducts.html" >All Products</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="bestseller.html">Best Sellers</a></li>
+            <li><a href="console.html">Consoles</a></li>
+            <li><a href="controller.html" class="active" >Controllers</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="on sale.html">On Sale</a></li>
+        </ul>
+        
+    <div class="filter-section mt-5">
+    <h5 class="text-uppercase fw-bold" style="font-size: 0.9rem; letter-spacing: 1px;">Filter by</h5>
+    <hr class="my-3" style="border-color: rgba(255,255,255,0.1);">
+    
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <p class="small m-0 text-muted">Price</p>
+        <span id="price-value" style="color: #8b5cf6; font-weight: 600; font-size: 0.9rem;">1000 €</span>
+    </div>
+    
+    <input type="range" class="arcade-slider" id="price-slider" min="0" max="1000" value="1000">
+    
+    <div class="d-flex justify-content-between mt-2">
+        <span style="font-size: 10px; color: #555;">0 €</span>
+        <span style="font-size: 10px; color: #555;">1000 €</span>
+    </div>
+    </div>
+    </aside>
+    <main class="col-lg-10 col-md-12 ps-lg-5">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-5 product-header"
+          >
+            <div class="mb-4 mb-md-0">
+              <h1 class="name m-0" style="font-size: 2.5rem">Controllers</h1>
+              <p class="results-text mt-2">Showing all results</p>
+            </div>
+
+            <div class="sort-container d-flex align-items-center w-auto">
+              <span class="sort-label me-2 d-none d-sm-inline">Sort by:</span>
+              <select
+                class="custom-sort-select"
+                style="width: auto !important; min-width: 180px"
+              >
+                <option>Recommended</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-sm-12 col-md-6 col-xl-4 d-flex justify-content-center product-item"
+              data-price="85"
+            >
+              <div class="card product-card-fix">
+                <div class="imgBox">
+                  <img src="images/XboxCONTROLLER.png" alt="Headset" class="mouse" />
+                </div>
+                <div class="contentBox">
+                  <h3>XBox Controller</h3>
+                  <h2 class="price">200.90 €</h2>
+                  <a href="#" class="buy">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+    
+    </div>
+    </div> 
+    </div> 
+    <footer class="main-footer my-5">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 text-center text-md-start">
+            <div class="footer-logo">
+              <i class="fa-solid fa-gamepad fa-3x mb-2"></i>
+              <h3>ARCADE</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Products</h5>
+            <ul class="footer-links">
+              <li><a href="games.html">Games</a></li>
+              <li><a href="console.html">Consoles</a></li>
+              <li><a href="controller.html">Controllers</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Store</h5>
+            <p class="footer-text">
+              500 Terry Francine Street<br />
+              San Francisco, CA 94158<br /><br />
+              Mon - Fri: 9am - 9pm<br /><br />
+              info@mysite.com<br />
+              123-456-7890
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Policy</h5>
+            <ul class="footer-links">
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="footer-hr" />
+
+        <div class="row align-items-center py-3">
+          <div class="col-md-6">
+            <h6 class="mb-3">Payment Methods</h6>
+            <div class="payment-icons">
+              <i class="fa-brands fa-cc-visa"></i>
+              <i class="fa-brands fa-cc-mastercard"></i>
+              <i class="fa-brands fa-cc-amex"></i>
+              <i class="fa-brands fa-cc-paypal"></i>
+              <i class="fa-brands fa-cc-discover"></i>
+            </div>
+          </div>
+          <div class="col-md-6 text-md-end mt-4 mt-md-0">
+            <h6 class="mb-3">Join the Community</h6>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>© 2026 by ARCADE. Powered and secured by AAC</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+       
+    </script>
+</body>
+</html>
+
+          
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        
+    const slider = document.querySelector('#price-slider');
+    const display = document.querySelector('#price-value');
+    const products = document.querySelectorAll('.product-item');
+
+    function filterProducts() {
+        const val = parseInt(slider.value);
+        
+        // 1. Update UI (Text and Slider color)
+        display.textContent = val + " €";
+        const min = slider.min || 0;
+        const max = slider.max || 1000;
+        const percentage = (val - min) / (max - min) * 100;
+        slider.style.backgroundSize = percentage + '% 100%';
+
+        // 2. Filter Logic
+        products.forEach(product => {
+            const productPrice = parseInt(product.getAttribute('data-price'));
+            
+            if (productPrice <= val) {
+                product.classList.remove('d-none');
+                product.classList.add('d-flex');
+            } else {
+                product.classList.remove('d-flex');
+                product.classList.add('d-none');
+            }
+        });
+    }
+
+    slider.addEventListener('input', filterProducts);
+    
+    // Initial call
+    filterProducts();
+</script>
+    
+</body>
+</html>
+</body>
+</html>
+
